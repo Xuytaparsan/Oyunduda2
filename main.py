@@ -66,9 +66,9 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/SecretSozBot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 Support", url="https://t.me/SecretMMC")
-        oyun = InlineKeyboardButton(text="🤖 Botlar", url="https://t.me/SecretMMC")
+        addme = InlineKeyboardButton(text="🤖 Qrupa əlavə edin!", url="https://t.me/SecretSozBot?startgroup=a")
+        sohbet = InlineKeyboardButton(text="💬 🇦🇿 Əsas Oyun Qrubumuz", url="https://t.me/bordomaviiiii")
+        oyun = InlineKeyboardButton(text="📣 Əsas Kanalımız", url="https://t.me/SecretMMC")
         admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/o2o_GenCeLi")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
