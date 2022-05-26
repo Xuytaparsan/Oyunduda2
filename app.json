@@ -1,6 +1,6 @@
 {
 	"name": "Bot list",
-	"description": "@HuseynH Tərəfindən kodlanan bot list",
+	"description": "@o2o_GenCeLi Tərəfindən kodlanan bot list",
 	"repository": "https://github.com/Goqerti/botlist",
 	"env": {
 		"BOT_TOKEN": {
