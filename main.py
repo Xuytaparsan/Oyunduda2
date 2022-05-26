@@ -73,7 +73,7 @@ def command_start(update, context: CallbackContext):
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_oyunu( "👋 Salam, Mən Crocodile oyunun aparıcısıyam 🤖" reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_oyunu( 'Salam, Mən Crocodile oyunun aparıcısıyam Mə', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
