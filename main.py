@@ -73,7 +73,7 @@ def command_start(update, context: CallbackContext):
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('👋 Salam, Mən Secret oyunun aparıcısıyam 🤖', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('👋 Salam, Mən Secret Game oyunun aparıcısıyam 🤖', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -87,7 +87,7 @@ def command_start(update, context: CallbackContext):
         game = get_or_create_game(chat_id)
         game.start()
 
-        update.message.reply_text('Söz Oyunu Başladı✨'.format(username), reply_to_message_id=True)
+        update.message.reply_text('Söz Oyunu Başladı Rəsmi Kanalımız qatılın @SecretMMC ✨✨'.format(username), reply_to_message_id=True)
 
         set_master(update, context)
 
@@ -104,8 +104,8 @@ def set_master(update, context):
 
     game.set_master(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("👻Sözə bax", callback_data='show_word')
-    change_word_btn = InlineKeyboardButton("♻️Sözü dəyiş", callback_data='change_word')
+    show_word_btn = InlineKeyboardButton("Sözə bax🔍", callback_data='show_word')
+    change_word_btn = InlineKeyboardButton("Sözü dəyiş➡️", callback_data='change_word')
 
     keyboard = [[show_word_btn], [change_word_btn]]
     reply_markup = InlineKeyboardMarkup(keyboard)
