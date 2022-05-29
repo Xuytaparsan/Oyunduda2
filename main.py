@@ -87,7 +87,7 @@ def command_start(update, context: CallbackContext):
         game = get_or_create_game(chat_id)
         game.start()
 
-        update.message.reply_text('Söz Oyunu Başladı                           Rəsmi Kanalımız qatılın @SecretMMC ✨✨'.format(username), reply_to_message_id=True)
+        update.message.reply_text('Söz Oyunu Başladı Rəsmi Kanalımız qatılın @VusalinBlogu ⚡🖤'.format(username), reply_to_message_id=True)
 
         set_master(update, context)
 
