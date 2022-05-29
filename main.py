@@ -69,7 +69,7 @@ def command_start(update, context: CallbackContext):
         addme = InlineKeyboardButton(text="🤖 Qrupa əlavə edin!", url="http://t.me/CguesCrocodileBot?startgroup=a")
         sohbet = InlineKeyboardButton(text="💬 🇦🇿 Əsas Söhbət Qrupumuz", url="https://t.me/AzeSohbetGurupu")
         oyun = InlineKeyboardButton(text="📣 Əsas Kanalımız", url="https://t.me/VusalinBlogu")
-        admin = InlineKeyboardButton(text="🧑🏻‍💻 Developer", url="https://t.me/Vusaliww w")
+        admin = InlineKeyboardButton(text="🧑🏻‍💻 Developer", url="https://t.me/Vusaliwww")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
