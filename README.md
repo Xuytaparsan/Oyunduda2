@@ -1,3 +1,2 @@
-2 lines (2 sloc)  160 Bytes
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Xuytaparsan/Oyunduda2)
