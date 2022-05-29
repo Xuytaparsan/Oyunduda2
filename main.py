@@ -66,14 +66,14 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🤖 Qrupa əlavə edin!", url="https://t.me/SecretSozBot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 🇦🇿 Əsas Oyun Qrubumuz", url="https://t.me/bordomaviiiii")
-        oyun = InlineKeyboardButton(text="📣 Əsas Kanalımız", url="https://t.me/SecretMMC")
+        addme = InlineKeyboardButton(text="🤖 Qrupa əlavə edin!", url="http://t.me/CguesCrocodileBot?startgroup=a")
+        sohbet = InlineKeyboardButton(text="💬 🇦🇿 Əsas Söhbət Qrupumuz", url="https://t.me/AzeSohbetGurupu")
+        oyun = InlineKeyboardButton(text="📣 Əsas Kanalımız", url="https://t.me/VusalinBlogu")
         admin = InlineKeyboardButton(text="🧑🏻‍💻 Developer", url="https://t.me/o2o_GenCeLi")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('👋 Salam, Mən Secret Game oyunun aparıcısıyam 🤖', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('👋 Salam, Mən Cgues Game oyunun aparıcısıyam.🐊', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
@@ -104,8 +104,8 @@ def set_master(update, context):
 
     game.set_master(update.message.from_user.id)
 
-    show_word_btn = InlineKeyboardButton("Sözə bax🔍", callback_data='show_word')
-    change_word_btn = InlineKeyboardButton("Sözü dəyiş➡️", callback_data='change_word')
+    show_word_btn = InlineKeyboardButton("Sözə bax ⚡", callback_data='show_word')
+    change_word_btn = InlineKeyboardButton("Sözü dəyiş ➡️", callback_data='change_word')
 
     keyboard = [[show_word_btn], [change_word_btn]]
     reply_markup = InlineKeyboardMarkup(keyboard)
